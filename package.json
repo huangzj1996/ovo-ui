@@ -1,0 +1,20 @@
+{
+    "name": "ovo-ui",
+    "private": true,
+    "version": "1.0.0",
+    "description": "",
+    "scripts": {
+        "dev": "pnpm -C example dev",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "license": "MIT",
+    "devDependencies": {
+        "typescript": "^4.8.4",
+        "vue": "^3.2.36"
+    },
+    "dependencies": {
+        "@ovo-ui/components": "workspace:^1.0.0",
+        "@ovo-ui/theme-chalk": "workspace:^1.0.0",
+        "@ovo-ui/utils": "workspace:^1.0.0"
+    }
+}
