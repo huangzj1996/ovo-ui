@@ -1,7 +1,7 @@
 <template>
-    <h1>我是开发调试页面</h1>
+  <h1>我是开发调试页面</h1>
 </template>
 
-<script setup></script>
+<script setup lang="ts"></script>
 
 <style scoped></style>
