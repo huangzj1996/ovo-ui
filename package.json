@@ -5,12 +5,20 @@
   "description": "",
   "scripts": {
     "dev": "pnpm -C example dev",
+    "dev:docs": "pnpm -C docs dev",
+    "clear": "rimraf dist",
+    "clear:cache": "rimraf node_modules/.cache/ rimraf node_modules/.vite",
+    "clear:lib": "rimraf node_modules",
     "lint:fix": "eslint . --fix",
     "lint:eslint": "eslint .",
     "lint:prettier": "prettier --write .",
     "lint:ls-lint": "ls-lint",
+    "reinstall": "rimraf pnpm-lock.yarm && rimraf node_modules && pnpm install",
+    "prepare": "husky install",
     "lint:css": "stylelint 'packages/theme-chalk/src/**/*.scss' --fix --custom-syntax postcss-scss",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "npx husky install",
+    "lint:staged": "lint-staged"
   },
   "license": "MIT",
   "devDependencies": {
@@ -21,6 +29,7 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-vue": "^9.7.0",
+    "lint-staged": "^13.0.3",
     "postcss-scss": "^4.0.5",
     "prettier": "^2.7.1",
     "stylelint": "^14.15.0",
