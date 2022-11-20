@@ -18,19 +18,27 @@
     "lint:css": "stylelint 'packages/theme-chalk/src/**/*.scss' --fix --custom-syntax postcss-scss",
     "test": "echo \"Error: no test specified\" && exit 1",
     "postinstall": "npx husky install",
-    "lint:staged": "lint-staged"
+    "lint:staged": "lint-staged",
+    "commit": "git-cz"
   },
   "license": "MIT",
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
   "devDependencies": {
     "@commitlint/cli": "^17.2.0",
     "@commitlint/config-conventional": "^17.2.0",
     "@ls-lint/ls-lint": "^1.11.2",
     "@typescript-eslint/eslint-plugin": "^5.42.1",
     "@typescript-eslint/parser": "^5.42.1",
+    "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.27.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-vue": "^9.7.0",
+    "husky": "^8.0.2",
     "lint-staged": "^13.0.3",
     "postcss-scss": "^4.0.5",
     "prettier": "^2.7.1",
