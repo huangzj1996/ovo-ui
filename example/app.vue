@@ -22,6 +22,11 @@
   <HButton circle type="primary">圆</HButton>
 </template>
 
-<script setup></script>
+<script setup lang="ts">
+const hanlderClick = ()=>{
+  console.log('1');
+  
+}
+</script>
 
 <style scoped></style>
