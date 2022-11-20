@@ -1,5 +1,5 @@
-import button from "./src/button.vue";
+import button from './src/button.vue';
 
-import { withInstall } from "@ovo-ui/utils/withInstall";
+import { withInstall } from '@ovo-ui/utils/withInstall';
 export const HButton = withInstall(button);
 export default HButton;
